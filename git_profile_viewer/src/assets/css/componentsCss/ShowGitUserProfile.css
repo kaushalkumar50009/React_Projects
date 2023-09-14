@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.container {
+  padding: 18px 10px;
+  border-radius: 18px;
+  color: #f5f5f5;
+  box-shadow: #000 7px 7px 26px;
+  background-color: #064046;
+}
+
+.id_name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+  margin-bottom: 12px;
+}
+
+.id {
+  font-size: 12px;
+}
+
+.git_user_name {
+  display: flex;
+  flex-direction: row;
+}
+
+.name {
+  font-size: 18px;
+}
+
+.git_user_image {
+  padding: 3px;
+}
+
+/* .git_user_image {
+	width: 22rem;
+	height: 23rem;
+	border-radius: 8rem 9rem 0rem 8rem;
+	background-color: #ffffff0f;
+	backdrop-filter: blur(40px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+} */
+
+.user_image {
+  width: 20rem;
+  height: 21rem;
+  border-radius: 8rem 9rem 0rem 8rem;
+  box-shadow: #00ffb770 1px 0px 9px;
+}
+
+.user_link {
+  margin-top: 3px;
+  text-align: center;
+  padding: 12px 3px;
+  font-size: 18px;
+}
+.user_link a {
+  text-decoration: none;
+  color: white;
+}

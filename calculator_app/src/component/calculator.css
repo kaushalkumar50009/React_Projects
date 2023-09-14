@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.calculator-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #011d26;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator_history {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show_history_data {
+  position: absolute;
+  right: 4rem;
+  top: 30px;
+  color: #ffffff;
+  border-radius: 8rem 1rem 1rem 17rem;
+  box-shadow: #264c62 0px 0px 36px 4px;
+  border: 2px solid #71a8c4fc;
+  padding: 12px 22px;
+  letter-spacing: 4px;
+  background: left;
+  width: 24%;
+  overflow: auto;
+  font-size: 21px;
+  line-height: 36px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+  text-align: end;
+  max-height: 60rem;
+  flex-flow: wrap;
+  text-shadow: white 0px 0px 9px;
+}
+
+/* Hide scrollbar thumb for Webkit-based browsers (Chrome, Safari) */
+.show_history_data::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+.show_history_data::-webkit-scrollbar-thumb {
+  background-color: #0e6181;
+  border-radius: 18px;
+  margin: 100px;
+}
+
+/* Adjust padding around the scrollbar container */
+.scrollable-container {
+  padding: 20px; /* Adjust the value as needed */
+  overflow: auto; /* Enable scrolling */
+}
+
+.title_text {
+  align-self: flex-start;
+}
+
+.clear_history {
+  align-self: center;
+}
+
+.text {
+  border-bottom: 1px solid #ffffff45;
+  padding-top: 12px;
+}
+
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #013346;
+  width: 51rem;
+  height: 51rem;
+  gap: 70px;
+  border-radius: 40rem 37rem 12rem 40rem;
+  box-shadow: #000 12px 12px 66px 33px;
+  border: 2px solid #8dd9ff94;
+}
+
+.calculator_inner_box {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.result_and_input {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+input[type="text"] {
+  width: 57rem;
+  height: 4rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border-radius: 51px;
+  border: 2px solid #2d587d;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #005171;
+  text-transform: capitalize;
+  max-width: 19em;
+  text-align-last: end;
+  box-shadow: black 3px 3px 15px 0px;
+}
+
+.result {
+  color: white;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  padding: 2px 1px;
+  text-shadow: black 5px 6px 8px;
+}
+
+.btns {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 21px;
+  justify-content: center;
+  align-content: center;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 15px;
+  width: 23rem;
+  height: 23rem;
+}
+
+/* For the third item, take the full row */
+.actions:nth-child(3) {
+  grid-column: 1 / 3;
+}
+
+.operators {
+  display: grid;
+  width: 5rem;
+  gap: 12px;
+}
+
+.button[value="="] {
+  grid-column: span 2;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+}
+
+.button.actions_button {
+  flex-grow: 1;
+  padding: 17px;
+}
+
+.button {
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #024b62;
+  outline: none;
+  border: 2px solid #03ffac;
+  border-radius: 51px;
+  cursor: pointer;
+  box-shadow: #020202 0px 0px 87px;
+  text-transform: uppercase;
+  text-shadow: black 4px 4px 4px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.09);
+}
+.button:active {
+  transform: scale(1);
+}
+
+.clear_button {
+  padding: 10px;
+  font-size: 12px;
+  box-shadow: #bbe6ff 0px 0px 15px;
+}

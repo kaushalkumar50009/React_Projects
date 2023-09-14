@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.git_viewer {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.input_error_container {
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+  background-color: #06373c;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+}
+
+input[type="text"] {
+  width: 57rem;
+  height: 3rem;
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #318625;
+  font-size: large;
+  letter-spacing: 1px;
+  color: #197100;
+  text-transform: capitalize;
+  max-width: 57vw;
+}
+
+.error_message {
+  font-size: 3em;
+}
+
+.mapping_git_data {
+  min-width: 100vw;
+  width: 100vw;
+  min-height: calc(100vh - 20vh);
+}
+
+.mapping {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(323px, 1fr));
+  grid-gap: 3em;
+  padding: 2rem 2rem;
+  justify-items: center;
+  align-content: center;
+  background-color: #06373c;
+  min-height: calc(100vh - 20vh);
+}

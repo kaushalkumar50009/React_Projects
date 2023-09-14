@@ -1,0 +1,10 @@
+https://chakra-ui.com/
+
+# using npm
+npx create-react-app my-app --template [template-name]{
+    npx create-react-app my-app --template @chakra-ui
+}
+
+npm i react-router-dom
+
+npm i react-responsive-carousel

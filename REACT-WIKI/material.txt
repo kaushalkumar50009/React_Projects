@@ -1,0 +1,51 @@
+{
+    Reack Hooks [usesstate, useEffect]
+
+    Fetch API
+
+    Bootstrap - for Styling
+
+    Pagination
+
+    Data Filters
+
+    Search bar
+
+    React Router
+
+    Dynamic Routing
+}
+
+
+
+{
+    npx create-react-app app-name
+
+    npm install bootstrap
+
+    npm install @popperjs/core --save
+
+    npm install sass
+
+    npm install react-paginate --save
+
+    npm start
+}
+
+{
+    extension: ES7 React/Redux/GraphQL/React-Native snippets
+}
+
+{
+    api = https://rickandmortyapi.com/documentation
+}
+
+{
+    pagination = npm install react-paginate --save
+    or
+    npm i react-paginate
+}
+
+{
+    React-router = npm install react-router-dom
+}

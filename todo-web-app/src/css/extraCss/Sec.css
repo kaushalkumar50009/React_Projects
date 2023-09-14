@@ -1,0 +1,73 @@
+.complete_box {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+.add-input_container,
+.add_task_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  background-color: #002d1c;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  box-shadow: #002d1c 0px 8px 28px 29px;
+  font-size: 27px;
+}
+
+.add_task_input {
+  flex-direction: row;
+  padding: 1rem;
+  gap: 30px;
+  height: 7rem;
+}
+
+input[type="text"] {
+  width: 57rem;
+  height: 3rem;
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #318625;
+  font-size: large;
+  letter-spacing: 1px;
+  color: #197100;
+  text-transform: capitalize;
+  max-width: 57vw;
+}
+
+.add_btn {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #0299277d;
+  outline: none;
+  border: 1px solid #197100;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: #000000ed 2px 3px 6px;
+  height: 3rem;
+  width: 18rem;
+}
+
+.main_body {
+  min-height: calc(100vh - 177px);
+  background-color: #011e00;
+}
+.todo_list {
+  color: white;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.cards_container {
+  padding: 3rem 3rem;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 2rem;
+}
